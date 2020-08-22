@@ -1,0 +1,25 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.item1 {
+	background-color: black;
+	color: white;
+	flex:1;
+}
+
+.item2 {
+	background-color: red;
+	flex:1;
+}
+
+.item3 {
+	background-color: yellow;
+	flex:1;
+}

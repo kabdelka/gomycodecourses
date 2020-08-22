@@ -1,0 +1,94 @@
+.navbar {
+	background-color: #649494;
+	display: flex;
+	justify-content: center;
+
+}
+@media (max-width: 576px) { 
+	.navbar {
+		max-width: 576px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.navbar {
+		min-width: 576px;
+		max-width: 768px;
+
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar {
+		min-width: 768px;
+		max-width: 992px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.navbar {
+		min-width: 992px;
+		max-width: 1200px;
+	}
+
+}
+
+} 
+
+li {
+	display: inline;
+}
+
+.nav-item {
+	
+}
+
+p {
+	font-family: helvetica;
+	font-size: 18px;
+}
+
+b {
+	text-decoration: underline;
+	color: #023434;
+}
+
+footer {
+	background-color: #649494;
+	display: flex;
+	justify-content: center;
+	
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #023434;
+}
+
+.Resume {
+	display: grid;
+	grid-template-columns: 200px 400px 200px;
+}
+
+.Resume > p {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	text-align: center;
+}
+
+.flexme {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.Work {
+	background-color: #649494
+}
+
+.About {
+	background-color: #649494;
+}

@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.full-page {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fafafa;
+}
+.container {
+	height: 80%;
+	width: 60%;
+	display: flex;
+	background-color: white;
+	box-shadow: 24px 6px 42px 1px rgba(0,0,0,0.55);
+
+}
+
+.login-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.login-user {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.login-password {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-submit {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	background-color: green;
+	color: white;
+	min-width: 60%;
+	height: 40px;
+	margin-top: 30px;
+}
+
+input {
+	margin-top: 30px;
+	min-width: 80%;
+	height: 30px;
+}
+
+.img-container {
+	display: flex;
+	flex: 1;
+	background-image: url(img.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.login-success {
+	 background-color: red;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	height: 80%;
+	width: 60%;
+	background-color: white;
+	box-shadow: 10px 10px 10px 10px grey;
+
+}
+
+.login-error {
+display: none;
+color: red;
+}

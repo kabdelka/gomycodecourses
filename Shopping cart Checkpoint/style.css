@@ -122,9 +122,11 @@ h2 {
 .icon-content {
 	flex: 2;
 	display: flex;
+	
 	flex-direction: row;
+	width: 100%;
 	align-items: center;
-	/*justify-content: space-between;*/
+	justify-content: space-around;
 	
 }
 
@@ -158,15 +160,23 @@ h2 {
 	background-color: #6B6B87;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	/*align-items: center;*/
+
 }
 
 .checkout-content {
 	flex:2;
 	border-bottom: 2px solid black;
+	display: flex;
+	flex-direction: column;
 }
 
 .checkout-btn-section {
 	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 
@@ -190,5 +200,53 @@ h2 {
 
 .fa-trash-o {
 	font-size: 30px;
+}
+
+.subtotal {
+	flex: 1;
+	/*background-color: red;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 10px;
+	text-decoration: underline;
+
+}
+.shipping {
+	flex: 1;
+	display: flex;
+	font-weight: 600;
+	/*background-color: blue;*/
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 10px;
+	text-decoration: underline;
+
+
+}
+.total {
+	flex: 2;
+	display: flex;
+	font-weight: 600;
+	/*background-color: green;*/
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 10px;
+	text-decoration: underline;
+	
+}
+
+.checkout-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: yellow;*/
+}
+
+.btn-chk {
+	height: 50px;
+	width:100px;
+	background-color: #89AA6A;
+	box-shadow: 10px
 }
 

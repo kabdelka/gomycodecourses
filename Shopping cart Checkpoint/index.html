@@ -38,11 +38,11 @@
 								</button>
 							</div>
 							<div class="quantity-num">
-								<input type="numeric" name="quantity" value="1">
+								<input type="numeric" name="quantity" value="1" class="quantity-item">
 							</div>
 							<div class="quantity-plus">
 								<button type="button">
-									<i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+									<i class="fa fa-plus-circle fa-lg plus-item" aria-hidden="true"></i>
 								</button>
 							</div>
 						</div>
@@ -54,20 +54,20 @@
 						<div class="icon-content">
 							<div class="heart">
 
-								<i class="fa fa-heart fa-lg" aria-hidden="true"></i>
+								<i class="fa fa-heart fa-lg like-item" aria-hidden="true"></i>
 
 							</div>
 							<div class="delete">
-								<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+								<i class="fa fa-trash-o fa-lg delete-item" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
 					<div class="content-price">
 						<div class="price-title">
-							<h2>Price</h2>
+							<h2>Price x1</h2>
 						</div>
 						<div class="price-value">
-							<input type="text" name="price" value="$199" readonly>
+							<input  class="price-item" type="text" name="price" value="199$" readonly>
 						</div>
 					</div>
 				</div>
@@ -95,11 +95,11 @@
 								</button>
 							</div>
 							<div class="quantity-num">
-								<input type="numeric" name="quantity" value="1">
+								<input type="numeric" name="quantity" value="1" class="quantity-item">
 							</div>
 							<div class="quantity-plus">
 								<button type="button">
-									<i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+									<i class="fa fa-plus-circle fa-lg plus-item" aria-hidden="true"></i>
 								</button>
 							</div>
 						</div>
@@ -111,20 +111,20 @@
 						<div class="icon-content">
 							<div class="heart">
 
-								<i class="fa fa-heart fa-lg" aria-hidden="true"></i>
+								<i class="fa fa-heart fa-lg like-item" aria-hidden="true"></i>
 
 							</div>
 							<div class="delete">
-								<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+								<i class="fa fa-trash-o fa-lg delete-item" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
 					<div class="content-price">
 						<div class="price-title">
-							<h2>Price</h2>
+							<h2>Price x1</h2>
 						</div>
 						<div class="price-value">
-							<input type="text" name="price" value="$299" readonly>
+							<input  class="price-item" type="text" name="price" value="299$" readonly>
 						</div>
 					</div>
 				</div>
@@ -152,11 +152,11 @@
 								</button>
 							</div>
 							<div class="quantity-num">
-								<input type="numeric" name="quantity" value="1">
+								<input type="numeric" name="quantity" value="1" class="quantity-item">
 							</div>
 							<div class="quantity-plus">
 								<button type="button">
-									<i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+									<i class="fa fa-plus-circle fa-lg plus-item" aria-hidden="true"></i>
 								</button>
 							</div>
 						</div>
@@ -167,19 +167,19 @@
 						</div>
 						<div class="icon-content">
 							<div class="heart">
-								<i class="fa fa-heart fa-lg" aria-hidden="true"></i>
+								<i class="fa fa-heart fa-lg like-item" aria-hidden="true"></i>
 							</div>
 							<div class="delete">
-								<i class="fa fa-trash-o fa-lg"></i>
+								<i class="fa fa-trash-o fa-lg delete-item"></i>
 							</div>
 						</div>
 					</div>
 					<div class="content-price">
 						<div class="price-title">
-							<h2>Price</h2>
+							<h2>Price x1</h2>
 						</div>
 						<div class="price-value">
-							<input type="text" name="price" value="$399" readonly>
+							<input  class="price-item" type="text" name="price" value="399$" readonly>
 						</div>
 					</div>
 				</div>
@@ -187,13 +187,21 @@
 			<!-- the checkout container right side  -->
 			<div class="checkout-container">
 				<div class="checkout-content">
-					<div class="subtotal"></div>
-					<div class="shipping"></div>
-					<div class="total"></div>
+					<div class="subtotal">
+						<h3>SubTotal:</h3><div class="total-subtotal"></div>
+					</div>
+					<div class="shipping">
+						<h3>Shipping fees:</h3><div class="shipping">$49</div>
+					</div>
+					<div class="total">
+						<h3>Total:</h3><div class="total-total"></div>
+					</div>
 				</div>
 				<div class="checkout-btn-section">
-					<div class="checkout-btn"></div>
-					<div class="checkout-img"></div>
+					<div class="checkout-btn">
+						<button type="button" class="btn-chk">CHECKOUT</button>
+					</div>
+					<!-- <div class="checkout-img"></div> -->
 				</div>
 			</div>
 		</div>

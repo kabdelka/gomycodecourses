@@ -45,8 +45,10 @@ let todoElement = document.getElementById('todo-element');
 function checkedOrNot () {
 	if (this.checked) {
 		this.parentElement.parentElement.parentElement.style.backgroundColor = 'green';
+		this.parentElement.parentElement.parentElement.style.textDecoration = 'line-through'
 	} else {
 		this.parentElement.parentElement.parentElement.style.backgroundColor = '#FFAAAA';
+		this.parentElement.parentElement.parentElement.style.textDecoration = 'none'
 	}
 }
 

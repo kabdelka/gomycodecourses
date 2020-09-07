@@ -137,7 +137,7 @@ const scalarProd = (tab1,tab2) => {
 	else return null;
 }
 
-console.log(scalarProd([2,7,1],[8,2,8,9]));
+console.log(scalarProd([2,7,1],[8,2,8]));
 
 // zero 
 
@@ -202,3 +202,190 @@ console.log(is_digit('5'))
 console.log(is_digit(','))
 
 console.log(nbrOf("AZ , 9#"));
+
+
+// hotel 
+const hotel = [
+  {
+    idRoom: 1,
+    type: 2,
+    state: false,
+    persons: [
+      {
+        id: 2132,
+        name: "Mohamed",
+        age: 18,
+        nationality: 1,
+      },
+    ],
+  },
+  {
+    idRoom: 2,
+    type: 1,
+    state: true,
+    persons: null,
+  },
+  {
+    idRoom: 3,
+    type: 3,
+    state: false,
+    persons: [
+      {
+        id: 213234,
+        name: "David",
+        age: 38,
+        nationality: 1,
+      },
+      {
+        id: 21326,
+        name: "Ann",
+        age: 34,
+        nationality: 1,
+      },
+      {
+        id: 213102,
+        name: "Jack",
+        age: 6,
+        nationality: 1,
+      },
+    ],
+  },
+];
+const getFreeRooms = (h) => {
+  let cpt = 0;
+  for (let i = 0; i < h.length; i++) {
+    if (h[i].state) cpt++;
+  }
+  return cpt;
+};
+
+const getNbrClientNationality = (h,nat) => {
+	let cpt = 0;
+	for (let i = 0; i < h.length; i++) {
+		// code...
+		if(!h[i].state) {
+			for (let j = 0; j < h[i].persons.length; j++) {
+				// code...
+				if (h[i].persons[j].nationality===nat) {
+					// code...
+					cpt++;
+				}
+			}
+
+			}
+		}
+		return cpt;
+	}
+
+
+console.log(getNbrClientNationality(hotel,1));
+
+const getNbrOfChildren =(h) => {
+	let cpt = 0;
+	for (let i = 0; i < h.length; i++) {
+		// code...
+		if (!h[i].state) {
+			// code...
+			for (let j = 0; j < h[i].persons.length; j++) {
+				// code...
+				if (h[i].persons[j].age <= 12) {
+					// code...
+					cpt++;
+				}
+			}
+		}
+	}
+	return cpt++;
+}
+
+
+console.log(getNbrOfChildren(hotel));
+
+// Bubbles Sort 
+// Swap function 
+const swapF = (arr,i,j) => {
+	let temp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = temp;
+}
+// Compare Function 
+
+const compF = (tab) => {
+	let cpt;
+
+	do {
+			 cpt = 0;
+		for (let i = 0; i < tab.length-1; ++i) {
+			// code...
+			if (tab[i] > tab[i+1]) {
+				cpt++;
+				swapF(tab,i,i+1);
+			}
+		}
+	} while (cpt != 0);
+	
+	return tab;
+}
+
+let t0 = performance.now();
+compF(['bds','gkl','rom','wed','jik','abe','abc'])
+let t1 = performance.now();
+console.log(`time of excution ${t1-t0}`)
+console.log(compF(['bds','gkl','rom','wed','jik','abe','abc']));
+
+// Binary Search 
+ 
+const binSearch = (tab,n) => {
+	let sortedTab = compF(tab);// used the compare function (bubble sort) to sort the tab
+	let start = 0;
+	let end = sortedTab.length;
+	do {
+		// code...
+		 let middle = Math.floor((start+end)/2);
+		if (sortedTab[middle] === n) {
+			// code...
+			return middle;
+		}
+		else if(sortedTab[middle]<n) {
+			// code...
+			start = middle +1;
+		}
+		else if(sortedTab[middle] > n) {
+			end = middle -1;
+		}
+	} while (start <= end);
+
+
+	return `${n} is not here`;
+}
+
+console.log(binSearch([3,2,1,5,9,8],7));
+
+
+const min =(a,b) => {
+	return a<b? a: b;
+};
+
+const minTab = (tab) => {
+	if (tab.length === 2) {
+		// code...
+		return min(tab[0],tab[1]);
+	}
+	return min(tab[0],minTab(tab.slice(1,tab.length)));
+}
+
+console.log(minTab([8,3,4,9,1]))
+
+
+const binSearchRecursive = (tab,n,start,end) => {
+	let sTab = tab.slice();
+	if(start===undefined) start = 0;
+	if(end===undefined) end = tab.length;
+	let middle = Math.floor((start+end)/2);
+	if(end<=start && sTab[middle] !== n) return `${n} is not here`;
+	else if (sTab[middle]===n) return middle;
+	else if (sTab[middle]< n) return binSearchRecursive(sTab,n,middle+1,end);
+	else return binSearchRecursive(sTab,n,start,middle-1);
+}
+
+console.log(binSearchRecursive([1,2,4,7,8,9],5));

@@ -1,0 +1,57 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.navbar-container {
+	position: fixed;
+	/*display: flex;*/
+	width: 100vw;
+	height: 20vh;
+	background-color: blue;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	align-items: center;
+	color: white;
+
+}
+
+.logo {
+	flex: 3;
+}
+.item {
+	flex: 1;
+}
+
+.but{
+	display: none;
+}
+
+
+
+.side-bar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 1;
+}
+.item-bar {
+	flex: 1;
+	/*display: none;*/
+}
+
+@media only screen and (max-width: 500px) {
+	.but{
+		display: flex;
+	}
+	.item {
+		display: none;
+	}
+	
+}

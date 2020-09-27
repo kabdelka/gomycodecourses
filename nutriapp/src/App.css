@@ -1,0 +1,98 @@
+@import '~antd/dist/antd.css';
+
+.navbar {
+  background-color: #444a5a;
+  font-size: 2em;
+  font-weight: bold;
+  /*text-align: center;*/
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #55f1a0;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  background-color: #D3D7CFFF;
+  min-height: 60vh;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  background-color: #F3F3F3FF;
+  padding-top: 10px;
+  margin-top: 30px;
+  min-height: 300px;
+  height: fit-content;
+  width: 30%;
+  /*border: solid 1px black;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+
+.avatar {
+  flex: 3;
+}
+
+
+.recipe-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  flex: 1;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recipe-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+.recipe-kca {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.recipe-details {
+  flex: 1;
+  margin-top:  10px;
+  width:100%;
+  border-top: solid 1px black;
+}

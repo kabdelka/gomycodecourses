@@ -1,0 +1,68 @@
+.navbar {
+  background-color: #444a5a;
+  font-size: 2em;
+  font-weight: bold;
+  /*text-align: center;*/
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  top: 10vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.sugestions {
+  position: fixed;
+  bottom: 0vh;
+  width: 100%;
+  background-color: green;
+}
+.sugestions ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.sugestions ul li {
+  cursor: pointer;
+}
+
+.card {
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100%;
+
+}
+
+.card-info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.zone {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+li:hover {
+background-color: blue;
+}

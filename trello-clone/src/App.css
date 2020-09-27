@@ -1,0 +1,9 @@
+.trello {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #3465A4FF;
+  min-height: 100vh;
+  height: fit-content;
+}
+

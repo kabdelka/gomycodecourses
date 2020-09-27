@@ -1,0 +1,41 @@
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.products-name {
+
+  width: 25%;
+  padding-left: 10px;
+  border: solid black 2px;
+  height: 100%;
+}
+
+
+.products-category {
+
+  width: 25%;
+  padding-left: 10px;
+  border: solid black 2px;
+  height: 100%;
+
+}
+
+
+.products-price {
+
+  width: 25%;
+  padding-left: 10px;
+  border: solid black 2px;
+  height: 100%;
+
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

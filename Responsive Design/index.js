@@ -10,6 +10,6 @@ btnClose.addEventListener('click', ()=> {
 	sidebar.setAttribute('class','sidebar translate');
 })
 
-window.addEventListener('resize',()=> {
+window.addEventListener('resize', ()=> {
 	sidebar.setAttribute('class','sidebar translate')
 })

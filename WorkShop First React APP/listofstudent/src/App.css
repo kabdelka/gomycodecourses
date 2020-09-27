@@ -1,0 +1,57 @@
+.navbar {
+  position: fixed;
+  height: 10vh;
+  color: white;
+  width: 100vw;
+  background-color: #0890C5FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  top: 12vh;
+  min-height: 88vh;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.list-container {
+  flex: 4;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+  /*background-color: red;*/
+  width: 100%;
+  border :solid blue 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.data-input {
+  flex: 1;
+}
+
+ul, li {
+  list-style-type: none;
+}
+.delete-btn {
+  position: relative;
+  top: 1vh;
+  left:25vw;
+}

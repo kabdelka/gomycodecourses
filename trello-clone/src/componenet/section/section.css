@@ -1,0 +1,12 @@
+.section {
+	background-color: #D3D7CFFF;
+	height: fit-content;
+	position: relative;
+	width: 29%;
+	top: 15vh;
+	border-radius: 10px;
+}
+
+.section-title {
+	margin:10px;
+}

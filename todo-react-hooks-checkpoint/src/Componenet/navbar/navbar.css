@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #444a5a;
+  font-size: 2em;
+  font-weight: bold;
+  /*text-align: center;*/
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+}

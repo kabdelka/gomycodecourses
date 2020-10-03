@@ -1,0 +1,22 @@
+.todo-element {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	width: 80vw;
+	border: solid 3px black;
+}
+.todo-element-title {
+	text-align: center;
+	margin: 5px;
+	border-bottom: solid 1px black;
+}
+
+.todo-element-description {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.todo-element-options {
+	display: flex;
+	justify-content: center;
+}

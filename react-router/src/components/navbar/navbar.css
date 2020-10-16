@@ -1,0 +1,28 @@
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	position: fixed;
+	height: 10vh;
+	background-color: #593EEFFF;
+	width: 100vw;
+	font-family: monospace;
+	font-size: 1.4em;
+	color:#D3D7CFFF;
+}
+
+
+
+
+a {
+
+	color: #D3D7CFFF;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+}
+
+a:hover {
+	background-color: #380797FF
+}

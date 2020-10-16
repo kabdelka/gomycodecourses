@@ -1,0 +1,12 @@
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	position: fixed;
+	height: 10vh;
+	width: 100%;
+	background-color: #0D4969FF;
+	color: white;
+}

@@ -1,0 +1,14 @@
+.add{
+	height: 40px;
+	width: 40px;
+	border-right: 50%;
+	background-image:url(add.jpg);
+	background-size: cover;
+	position: fixed;
+	top: 15vh;
+	z-index: 1;	
+	left: 50vw;
+	cursor: pointer;
+	
+
+}

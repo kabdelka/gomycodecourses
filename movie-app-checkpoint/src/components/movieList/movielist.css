@@ -1,0 +1,11 @@
+.movie-list {
+	display: flex;
+	justify-content: space-around;
+	background-color: #408CBFFF;
+	min-height: 90vh;
+	width: 100%;
+	height: fit-content;
+	position: relative;
+	top: 10vh;
+	flex-wrap: wrap;
+}

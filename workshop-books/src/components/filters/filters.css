@@ -1,0 +1,14 @@
+.filters {
+  flex: 2;
+  background-color: black;
+  min-height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.txt-filters {
+	color :white;
+	font-size: 2em;
+}

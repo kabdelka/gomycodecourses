@@ -1,0 +1,13 @@
+.banner {
+	position: fixed;
+	height: 45vh;
+	width: 100vw;
+	background-image: url(./booksImage.jpg);
+	background-size: cover;
+	background-position: 40%;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}

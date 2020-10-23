@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  top: 45vh;
+  min-height:65vh;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.inputs {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    width: 95%;
+}

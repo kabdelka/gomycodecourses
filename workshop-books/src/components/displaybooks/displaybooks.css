@@ -1,0 +1,22 @@
+
+.display-books {
+	display: flex;
+  flex: 4;
+  flex-direction: column;
+  height: 100%;
+  background-color: #D3D7CFFF;
+  min-height: 65vh;
+  width: 100%;
+
+}
+
+.btn {
+	flex: 1;
+}
+
+.books-container {
+	flex: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
